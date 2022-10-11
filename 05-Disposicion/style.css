@@ -1,0 +1,17 @@
+body{
+    background-color: darkslategray;
+}
+.galeria-imagenes{
+    display: flex;   
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 10px;
+}
+.imagen{
+    width: 300px;  
+    border-radius: 10px;   
+}
+.imagen:hover{
+    zoom: 110%;
+    cursor: pointer;
+}

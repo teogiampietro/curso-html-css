@@ -1,0 +1,14 @@
+.btn-modern{
+    width: 200px;
+    height: 30px; 
+}
+.btn-modern:hover{
+    background-color: beige;
+    color: chocolate;
+    transform: translateY(-5px);
+    box-shadow:2px 2px coral;
+    transition: 0.4s;
+}
+.btn-modern:hover::before{
+    content: 'Efectos ON';
+}

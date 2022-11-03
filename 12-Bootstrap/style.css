@@ -1,0 +1,12 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+div input{
+    font-size: 1.5rem!important; 
+}
+div textarea{
+    font-size: 1.5rem!important; 
+}

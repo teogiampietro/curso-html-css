@@ -1,0 +1,108 @@
+$color-main: #0075ff;
+@mixin btn-base {
+    padding: 0.5rem 2rem;
+    border-radius: 0.25rem;
+}
+
+@mixin btn-modify {
+    font-size: 0.75rem;
+    padding: 0.1rem 1rem;
+}
+@mixin feature-text {
+    width: 60%;  
+    line-height: 1.3rem;
+}
+
+div{
+    margin-bottom: 2rem;
+}
+
+.btn-main{
+    @include btn-base();
+    background-color: $color-main;
+    color: white;
+    border: solid 1px $color-main;   
+    
+    &:hover{
+        background-color: white;
+        color: $color-main;
+        border: solid 1px $color-main;
+    }
+
+    &-s {
+        @extend .btn-main;
+        @include btn-modify();
+    }
+}
+
+.btn-sec{
+    @include btn-base();
+    color: black;
+    background-color: transparent;
+    border: none;
+    &:hover{
+        background-color: transparent;
+        color: #888;
+        border: none;
+    }
+    &-s{
+        @extend .btn-sec;
+        @include btn-modify();
+    }
+}
+.main-menu{
+    li{
+        padding-inline-start: 0px;
+        display: inline;
+        list-style: none;
+        font-size: 1rem;
+        margin: 0rem 0.5rem;
+        font-weight: bold;
+    }  
+}
+
+.icon-sm{
+    i{
+        color: $color-main;
+        padding: 0.1rem 0.25rem;
+        border-radius: 50%;
+        box-shadow: 0 0 10px #00004069;
+    }
+}
+
+.feature-container{
+    display: flex;
+    text-align: center;
+}
+.feature{
+    margin: 1rem;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon{
+    color: $color-main;
+    font-size: 8rem;
+}
+.description{ 
+    @include feature-text();
+    color: #888;
+    margin-bottom: 3rem;
+}
+.sub-description{
+    @include feature-text();
+    color: $color-main;  
+}
+
+.icon-desc-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.icon-desc{
+    color: $color-main;  
+    font-size: 8rem;
+}

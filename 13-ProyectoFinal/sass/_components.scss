@@ -13,9 +13,6 @@ $color-main: #0075ff;
     line-height: 1.3rem;
 }
 
-div{
-    margin-bottom: 2rem;
-}
 
 .btn-main{
     @include btn-base();
@@ -51,6 +48,7 @@ div{
     }
 }
 .main-menu{
+    margin-bottom: 0rem;
     li{
         padding-inline-start: 0px;
         display: inline;
@@ -58,6 +56,13 @@ div{
         font-size: 1rem;
         margin: 0rem 0.5rem;
         font-weight: bold;
+        a{
+            color: #000;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
     }  
 }
 

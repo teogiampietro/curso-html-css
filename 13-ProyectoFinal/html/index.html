@@ -1,63 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
     <title>Proyecto Final</title>
 </head>
+
 <body>
-    <div>
-        <nav>
+    <nav class="nav">
+        <div class="logo">
+            <a href="#"><img src="../assets/img/logo.png" alt="logo"></a>
+        </div>
+        <div class="menu">
             <ul class="main-menu">
-                <li>Price</li>
-                <li>Learn</li>
-                <li>Indivisual</li>
-                <li>Business</li>
-                <li>Developer</li>
-                <li>Company</li>
-            </ul>         
-        </nav>
-    </div>
-        <div>
-            <button class="btn-main">Boton main</button>
-            <button class="btn-main-s">Boton main-s</button>
+                <li><a href="#">Coinbase</a></li>
+                <li><a href="#">Price</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Indivisual</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Developer</a></li>
+                <li><a href="#">Company</a></li>
+            </ul>
         </div>
-        <div>
-            <button class="btn-sec">Boton sec</button>
-            <button class="btn-sec-s">Boton sec-s</button>
+        <div class="get-setarted">
+            <button class="btn-sec-s">Sign in</button>
+            <button class="btn-main">Get started</button>
         </div>
-        
-        <div>
-            <span class="icon-sm"><i class="bi bi-arrow-clockwise"></i></span>
+    </nav>
+    <section class="home">
+        <div class="home-cta">
+            <div class="cta-text">
+                <span>Jump start your portfolio</span>
+                <i class="bi bi-arrow-right"></i>                
+            </div>
+            <h2 class="home-title">Jump start your crypto portfolio</h2>
+            <div class="home-description">
+                <span>Coinbase us the easiest place to buy and sell cryptocurrency. Sig up and get started today.</span>
+            </div>
+            <div class="lead-magnet row align-items-center">
+                <div class="col-7">
+                    <input type="text" class="form-control" placeholder="Email adress">
+                </div>
+                <div class="col">
+                    <button class="btn-main">Get started </button>
+                </div>  
+            </div>
         </div>
-        <div class="feature-container">
-            <section class="feature">  
-                <span class="icon"><i class="bi bi-eye-fill"></i></span>
-                <h3>Secure Storage</h3>
-                <p class="description"> We store the vast majority of the digital assets in secure offline storage.</p>
-                <p class="sub-description">Learn how Coinbase keeps your funds safe and secure </p>
-            </section>   
-            <section class="feature">  
-                <span class="icon"><i class="bi bi-eye-fill"></i></span>
-                <h3>Secure Storage</h3>
-                <p class="description"> We store the vast majority of the digital assets in secure offline storage.</p>
-                <p class="sub-description">Learn how Coinbase keeps your funds safe and secure </p>
-            </section>   
-            <section class="feature">  
-                <span class="icon"><i class="bi bi-eye-fill"></i></span>
-                <h3>Secure Storage</h3>
-                <p class="description"> We store the vast majority of the digital assets in secure offline storage.</p>
-                <p class="sub-description">Learn how Coinbase keeps your funds safe and secure </p>
-            </section>   
+        <div class="home-img">
+            <img src="../assets/img/wallet.png" alt="wallet">
         </div>
-        <div class="icon-desc-container">
-            <span class="icon-desc"><i class="bi bi-person-plus-fill"></i></span>
-            <h3>Create an account</h3>
-        </div>   
+    </section>
+    <section class="features"></section>
+
 </body>
+
 </html>
+
+<!--
+    
+<div>
+    <button class="btn-main">Boton main</button>
+    <button class="btn-main-s">Boton main-s</button>
+</div>
+<div>
+    <button class="btn-sec">Boton sec</button>
+    <button class="btn-sec-s">Boton sec-s</button>
+</div>
+
+<div>
+    <span class="icon-sm"><i class="bi bi-arrow-clockwise"></i></span>
+</div>
+<div class="feature-container">
+    <section class="feature">  
+        <span class="icon"><i class="bi bi-eye-fill"></i></span>
+        <h3>Secure Storage</h3>
+        <p class="description"> We store the vast majority of the digital assets in secure offline storage.</p>
+        <p class="sub-description">Learn how Coinbase keeps your funds safe and secure </p>
+    </section>   
+    <section class="feature">  
+        <span class="icon"><i class="bi bi-eye-fill"></i></span>
+        <h3>Secure Storage</h3>
+        <p class="description"> We store the vast majority of the digital assets in secure offline storage.</p>
+        <p class="sub-description">Learn how Coinbase keeps your funds safe and secure </p>
+    </section>   
+    <section class="feature">  
+        <span class="icon"><i class="bi bi-eye-fill"></i></span>
+        <h3>Secure Storage</h3>
+        <p class="description"> We store the vast majority of the digital assets in secure offline storage.</p>
+        <p class="sub-description">Learn how Coinbase keeps your funds safe and secure </p>
+    </section>   
+</div>
+<div class="icon-desc-container">
+    <span class="icon-desc"><i class="bi bi-person-plus-fill"></i></span>
+    <h3>Create an account</h3>
+</div>    -->

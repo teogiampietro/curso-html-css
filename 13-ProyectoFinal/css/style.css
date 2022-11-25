@@ -52,8 +52,9 @@
 }
 
 .icon-sm i {
+  font-size: 1.2rem;
   color: #0075ff;
-  padding: 0.1rem 0.25rem;
+  padding: 0.2rem 0.35rem;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 64, 0.4117647059);
 }
@@ -119,28 +120,64 @@ body {
   max-width: 7rem;
 }
 
-.home {
+.sec-home {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+  padding-top: 5rem;
 }
-.home .home-cta {
+.sec-home .home-cta {
   width: 25rem;
 }
-.home .home-cta .cta-text {
+.sec-home .home-cta .cta-text {
   color: #0075ff;
 }
-.home .home-cta .home-title {
+.sec-home .home-cta .home-title {
   font-size: 4rem;
 }
-.home .home-cta .home-description {
+.sec-home .home-cta .home-description {
   padding-bottom: 1rem;
   padding-top: 1rem;
+  color: #808b8d;
 }
-.home .home-img {
+.sec-home .home-img {
   text-align: right;
   width: 25rem;
+}
+
+.sec-features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 5rem;
+  flex-direction: column;
+  text-align: center;
+}
+.sec-features .intro h3 {
+  font-size: 2rem;
+}
+.sec-features .intro p {
+  color: #808b8d;
+}
+.sec-features .features {
+  display: flex;
+}
+.sec-features .features .text {
+  max-width: 40%;
+}
+.sec-features .features .text .feature {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.sec-features .features .text .feature .description .text {
+  max-width: 100%;
+  text-align: left;
+}
+.sec-features .features .image {
+  max-width: 60%;
 }
 
 /*# sourceMappingURL=style.css.map */

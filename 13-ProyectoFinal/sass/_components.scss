@@ -68,8 +68,9 @@ $color-main: #0075ff;
 
 .icon-sm{
     i{
+        font-size: 1.2rem;
         color: $color-main;
-        padding: 0.1rem 0.25rem;
+        padding: 0.2rem 0.35rem;
         border-radius: 50%;
         box-shadow: 0 0 10px #00004069;
     }
